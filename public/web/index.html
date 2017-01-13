@@ -4,189 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>ihoshie</title>
-    <link rel="stylesheet" type="text/css" href="common.css">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <link rel="stylesheet" type="text/css" href="slider.css">
-    <style type="text/css">
-    html {
-        background-image: url('imgs/bg.jpg')
-    }
-    
-    * {
-        word-break: break-all;
-    }
-    
-    .banner {
-        background-image: url('imgs/b.jpg');
-        height: 420px;
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    .photo {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-image: url('imgs/myPhoto.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        box-shadow: 0px 0px 20px;
-        margin: -24px auto 12px auto;
-    }
-    
-    .photo:hover {
-        transition: all 2s;
-        transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        /* IE 9 */
-        -webkit-transform: rotate(360deg);
-        /* Safari and Chrome */
-        -o-transform: rotate(360deg);
-        /* Opera */
-        -moz-transform: rotate(360deg);
-        /* Firefox */
-        box-shadow: 0px 0px 8px;
-    }
-    
-    .card {
-        background: rgba(255, 255, 255, 0.8);
-        box-sizing: border-box;
-        padding: 64px 24px;
-        border: 1px solid #eee;
-        border-radius: 8px;
-        box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25);
-        line-height: 28px;
-        margin: 64px 0;
-    }
-    
-    .myCard {
-        margin-top: -208px;
-        padding: 56px 24px;
-    }
-    
-    .myBlog {
-        margin-top: 24px;
-    }
-    
-    .MyblogForA {
-        text-decoration: none;
-        color: blue;
-        padding-left: 4px;
-    }
-    
-    .project {
-        margin-top: 40px;
-    }
-    
-    .fengexian {
-        height: 1px;
-        background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
-        margin: 24px auto;
-    }
-    
-    .myH2 {
-        font-size: 32px;
-        font-weight: normal;
-    }
-    
-    .projectList {
-        list-style: none;
-        width: 640px;
-        margin: 0 auto;
-        position: relative;
-    }
-    
-    .projectList li {
-        width: 170px;
-        height: 210px;
-        float: left;
-        margin: 0 16px;
-        border: 1px solid #aaa;
-        border-radius: 4px;
-        filter: blur(1px) grayscale(.5) opacity(0.8);
-        transition: all 0.3s;
-        margin-top: 32px;
-        position: relative
-    }
-    
-    .projectList li:hover {
-        filter: blur(0) grayscale(0) opacity(1);
-        box-shadow: 0 0 24px gray;
-        margin-top: 16px;
-        border: 1px solid #00699e;
-    }
-    
-    .projectImg {
-        width: 98%;
-        margin: 2px 1% 2px 1%;
-        height: 108px;
-        border-radius: 6px;
-    }
-    
-    .Describe {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 0 3%;
-        line-height: 24px;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-    }
-    
-    .myGame {
-        box-sizing: content-box;
-        padding: 0;
-        overflow: hidden;
-        border: none;
-    }
-    
-    .sliderContent {
-        width: 60%;
-        float: left;
-    }
-    
-    .gameContent {
-        width: 39%;
-        box-sizing: border-box;
-        --webkit-box-sizing: border-box;
-        margin-left: 60%;
-        padding: 40px;
-    }
-    .gameDataTable td{
-			width: 20%;
-			text-align: right;
-    }
-      .gameDataTable .blue{
-			text-align: left;
-    }
-    .gameDataTable2,.gameDataTable3{
-    	display: none;
-    }
-    @media screen and (max-width: 900px) {
-        .row {
-            width: 90%;
-        }
-        .projectList li {
-            float: none;
-            margin: 0 auto;
-            border: 1px solid #aaa;
-            border-radius: 4px;
-            filter: blur(0px) grayscale(0) opacity(0.8);
-            transition: all 0.3s;
-            margin-top: 32px;
-            position: relative
-        }
-        .projectList {
-            width: 100%;
-        }
-    }
-    </style>
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="web.css">
 </head>
 
 <body>
+ <div class="typing-ani" id="title"></div>
     <div class="banner"></div>
     <div class="main">
         <div class="row">
@@ -195,8 +20,8 @@
                     <div class="photo"></div>
                 </a>
                 <p class="center">我爱编程，也爱设计；我爱奋斗，也享受生活；我爱最新的手机，更爱高性能电脑；
-                    <br> 我擅长技术，崇尚简单的快乐和幸福； 我没什么特别，我很特别；
-                    <br>我不是什么工程师，我是程序员。我和别人不一样，我和你一样，为理想而奋斗。
+                    <br class="m_hidden"> 我擅长技术，崇尚简单的快乐和幸福； 我没什么特别，我很特别；
+                    <br class="m_hidden">我不是什么工程师，我是程序员。我和别人不一样，我和你一样，为理想而奋斗。
                 </p>
                 <p class="myBlog center">这是我的个人博客:<a class="MyblogForA" href="/blog">我的博客</a> </p>
             </div>
@@ -216,8 +41,8 @@
                                 </li>
                             </ul>
                             <div class="pagination"></div>
-                            <span class="prev"><i class="iconfont">&#xe612;</i></span>
-                            <span class="next"><i class="iconfont">&#xe613;</i></span>
+                            <span class="prev"><i class="iconfont"><</i></span>
+                            <span class="next"><i class="iconfont">></i></span>
                         </div>
                     </div>
                 </div>
@@ -407,12 +232,11 @@
 <script src="https://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src='swiper.min.js'></script>
 <script>
-$(function() {
-    silier();
-    //轮播广告
+//轮播广告
     function silier() {
         var oSlider = $('#J_slider');
         if (oSlider.length) {
+            console.log('js:242')
             var bannerSlider = new Swiper(oSlider[0], {
                 pagination: '.pagination',
                 loop: true,
@@ -423,13 +247,13 @@ $(function() {
                 resistance: '100%', //阻止弹性
                 paginationClickable: true,
                 onSlideChangeEnd: function(swiper){
-      					// console.log(swiper.activeIndex) //切换结束时，告诉我现在是第几个slide
-      					var i=swiper.activeIndex
-      					if (i==$('.swiper-slide').length-1){
-      						i=1
-      					}
-      					$('.myGame .gameDataTable').hide()
-      					$('.myGame .gameDataTable').eq(i-1).show()
+                        console.log(swiper.activeIndex) //切换结束时，告诉我现在是第几个slide
+                        var i=swiper.activeIndex
+                        if (i==$('.swiper-slide').length-1){
+                            i=1
+                        }
+                        $('.myGame .gameDataTable').hide()
+                        $('.myGame .gameDataTable').eq(i-1).show()
     },
             });
             // bannerSlider.stopAutoplay();
@@ -447,7 +271,39 @@ $(function() {
             });
         }
     }
-})
-</script>
+// $(function() {
 
+//     silier();
+    
+// })
+</script>
+<script type="text/javascript" src='typing-animate-min.js'></script>
+<script>
+$('.main').hide()
+     var typing = new Typing("typing-ani",{
+ "typingSpeed":200,  //打字速度，数值为时间间隔（ms）
+ "cursorSpeed":200, //光标闪烁速度，数值为时间间隔（ms）
+ "head":"/* ",      //头部固定文字
+ "foot":" */"       //尾部固定文字
+ });
+
+     typing.add("www.ihoshine.cn") //增加文字
+.sleep(1000)
+.setting({typingSpeed:20})                          
+.delete()
+.setting({typingSpeed:100})                              
+.add("Hello World")
+.sleep(1000)
+.add(" : )")
+.sleep(1000)
+.callback(                             //回调函数，上个任务执行后执行。
+    function(){
+        $('.typing-ani').css("padding","0"); 
+        $('.typing-ani').css("height","0"); 
+        $('.typing-ani').css("opacity","0"); 
+        $('.main').show()
+        silier();
+    })
+.execute()
+</script>
 </html>

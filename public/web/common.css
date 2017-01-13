@@ -1,12 +1,13 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "微软雅黑", "Helvetica Neue", Arial, "Microsoft Yahei", sans-serif;
+  font-family: "Roboto", sans-serif, 微软雅黑;
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: none;
   -webkit-outline: none;
   outline: none;
   border: 0 none;
+  word-break: break-all;
   -webkit-font-smoothing:antialiased;
 }
 body{
