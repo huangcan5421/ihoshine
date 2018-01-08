@@ -3,7 +3,7 @@
     top: 0;
     width: 33.3%;
     height: 100%;
-    background: url('../imgs/10.jpg');
+    background: url('http://hoshine.oss-cn-hangzhou.aliyuncs.com/imgs/fsQ5-bv3aXbZ36T3cSk0-zk.jpg.medium.jpg');
     -webkit-background-size: auto, auto 970px;
     background-size: auto, auto 970px;
     transition: all .1s;
@@ -122,7 +122,14 @@
 
 .article {
     margin: 2em 0 3em 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 6px #ccc;
+    background:#fff;
+    box-sizing: border-box;
+    padding: 12px 24px;
 }
+
 
 article .hd {
     font-size: 24px;
@@ -142,6 +149,12 @@ article .bd:hover {
     float: left;
     width: 66.6%;
     line-height: 1.8em;
+    max-height: 200px;
+    overflow: hidden;
+}
+.leftContent p{
+    white-space: pre-line;
+
 }
 
 .articleImgContent {
@@ -160,12 +173,17 @@ article .bd:hover {
     background-size: cover;
     border-radius: 8px;
     box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4), 0px 1px 10px 2px rgba(0, 0, 0, 0.2);
+    background-position: center;
 }
 
 .tags {
     font-size: 12px;
     color: #888;
     padding-top: 12px;
+}
+.pre,.next{
+    display: inline-block;
+    border: 1px solid rgba(72, 69, 69, 0.6);
 }
 
 @media screen and (max-width: 900px) {
@@ -201,7 +219,7 @@ article .bd:hover {
     }
     .main {
         width: 100%;
-        padding: 3em;
+        padding: 1em;
     }
     .leftContent {
         width: 100%;
